@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFC51
-#define PRODUCT_ID      0x0058 
+#define PRODUCT_ID      0x0058
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    F_YUUCHI
 #define PRODUCT         Lily58
@@ -53,8 +53,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define LOCKING_RESYNC_ENABLE
 
 /* ws2812 RGB LED */
-#define RGB_DI_PIN D3
-#define RGBLED_NUM 12    // Number of LEDs
+// #define RGB_DI_PIN D3
+// #define RGBLED_NUM 12    // Number of LEDs
 
 /*
  * Feature disable options
@@ -73,3 +73,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_ONESHOT
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
+
+/* Enable backlight */
+#define BACKLIGHT_PIN D3
+#define BACKLIGHT_LEVELS 3
+#define BREATHING_PERIOD 6
